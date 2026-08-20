@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>渡鲸澜｜我的负责类目</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    background:#f5f6f8;
+    color:#222;
+    line-height:1.6;
+}
+
+/* 顶部 */
+
+.header{
+    background:#111;
+    color:#fff;
+    padding:55px 7% 50px;
+}
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:45px;
+}
+
+.logo{
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.back{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    opacity:.75;
+}
+
+.back:hover{
+    opacity:1;
+}
+
+.header h1{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:12px;
+    letter-spacing:1px;
+}
+
+.header p{
+    color:#aaa;
+    font-size:16px;
+}
+
+/* 页面主体 */
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:45px auto 80px;
+}
+
+/* 标题 */
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:22px;
+}
+
+.section-title h2{
+    font-size:24px;
+}
+
+.section-title span{
+    color:#999;
+    font-size:13px;
+}
+
+/* 类目卡片 */
+
+.category{
+    background:#fff;
+    border-radius:14px;
+    margin-bottom:28px;
+    overflow:hidden;
+    box-shadow:0 4px 18px rgba(0,0,0,.05);
+    border:1px solid #eee;
+}
+
+/* 类目标题 */
+
+.category-header{
+    padding:22px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#111;
+}
+
+.category-name{
+    font-size:22px;
+    font-weight:700;
+}
+
+.category-en{
+    font-size:12px;
+    color:#777;
+    letter-spacing:1.5px;
+    margin-top:3px;
+}
+
+.category-number{
+    font-size:32px;
+    font-weight:700;
+    opacity:.18;
+}
+
+/* 不同类目颜色 */
+
+.knit .category-header{
+    background:#e5f1dc;
+}
+
+.coat .category-header{
+    background:#fff0c9;
+}
+
+.water .category-header{
+    background:#e0f0f8;
+}
+
+.short .category-header{
+    background:#e6edf5;
+}
+
+/* 表格 */
+
+.table-wrap{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:800px;
+}
+
+th{
+    background:#fafafa;
+    text-align:left;
+    font-size:13px;
+    color:#777;
+    font-weight:500;
+    padding:13px 22px;
+    border-bottom:1px solid #eee;
+}
+
+td{
+    padding:15px 22px;
+    border-bottom:1px solid #eee;
+    font-size:14px;
+    vertical-align:top;
+}
+
+tr:last-child td{
+    border-bottom:none;
+}
+
+td:first-child{
+    width:180px;
+    font-weight:600;
+    color:#222;
+}
+
+.path{
+    color:#555;
+    font-size:13px;
+}
+
+/* 标签 */
+
+.tag{
+    display:inline-block;
+    padding:3px 8px;
+    margin-left:8px;
+    border-radius:20px;
+    font-size:11px;
+    background:#f1f1f1;
+    color:#777;
+}
+
+/* 返回首页 */
+
+.home-button{
+    display:inline-block;
+    margin-top:10px;
+    padding:11px 20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    color:#333;
+    text-decoration:none;
+    background:#fff;
+    font-size:14px;
+}
+
+.home-button:hover{
+    background:#111;
+    color:#fff;
+}
+
+/* 手机端 */
+
+@media(max-width:700px){
+
+    .header{
+        padding:35px 6%;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
+    .container{
+        width:92%;
+        margin-top:30px;
+    }
+
+    .category-header{
+        padding:18px 20px;
+    }
+
+    .category-name{
+        font-size:19px;
+    }
+
+    td{
+        padding:13px 15px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 顶部 -->
+
+<header class="header">
+
+    <div class="header-top">
+
+        <div class="logo">
+            DUJINGLAN
+        </div>
+
+        <a class="back" href="index.html">
+            ← 返回首页
+        </a>
+
+    </div>
+
+    <h1>我的负责类目</h1>
+
+    <p>
+        MY CATEGORY MAP · 男装重点上品路径
+    </p>
+
+</header>
+
+
+<!-- 主体 -->
+
+<main class="container">
+
+    <div class="section-title">
+
+        <h2>负责类目路径</h2>
+
+        <span>
+            CATEGORY ROADMAP
+        </span>
+
+    </div>
+
+
+    <!-- ==================== 针织 / 毛衣 ==================== -->
+
+    <section class="category knit">
+
+        <div class="category-header">
+
+            <div>
+
+                <div class="category-name">
+                    针织 / 毛衣
+                </div>
+
+                <div class="category-en">
+                    KNITWEAR
+                </div>
+
+            </div>
+
+            <div class="category-number">
+                01
+            </div>
+
+        </div>
+
+
+        <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        类目
+                    </th>
+
+                    <th>
+                        重点上品路径
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        常规毛衣
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士休闲运动服 ＞ 男士休闲运动毛衣 ＞ 针织衫
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        Polo领（长+短）
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士休闲运动服 ＞ 男士Polo衫
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        套头
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士毛衣 ＞ 男士针织套头衫
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        开衫
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士毛衣 ＞ 男士针织开衫
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        背心
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士毛衣 ＞ 男士针织背心
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        镂空 / 新奇版型
+                    </td>
+
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 新奇商品 ＞ 新奇服装和产品 ＞ 新奇服装 ＞ 男士新奇毛衣
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        运动毛衣
+                    </td>
+
+                    <td class="path">
+                        运动与户外用品 ＞ 健身 ＞ 训练用品 ＞ 健身服 ＞ 男士 ＞ 男士休闲运动毛衣
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== 风衣 / 大衣 ==================== -->
+
+    <section class="category coat">
+
+        <div class="category-header">
+
+            <div>
+
+                <div class="category-name">
+                    风衣 / 大衣
+                </div>
+
+                <div class="category-en">
+                    COATS & OUTERWEAR
+                </div>
+
+            </div>
+
+            <div class="category-number">
+                02
+            </div>
+
+        </div>
+
+
+        <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        类目
+                    </th>
+
+                    <th>
+                        重点上品路径
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>运动夹克</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士休闲运动服 ＞ 男士休闲运动风衣、夹克
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>冲锋衣</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 户外服饰 ＞ 男士户外服装 ＞ 男士冲锋衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>抓绒衣</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士外套 ＞ 抓绒外套
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>防风软壳</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 户外服饰 ＞ 男士户外服装 ＞ 男士软壳服
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>仿羊绒大衣</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士外套 ＞ 大衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>商务风衣</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士外套 ＞ 风衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>休闲风衣</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士外套 ＞ 休闲风衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>PU / 皮质长款</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士外套 ＞ PU皮衣 / 长款外套
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>雨衣</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 户外服饰 ＞ 男士户外服装 ＞ 雨衣
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== 水上运动 ==================== -->
+
+    <section class="category water">
+
+        <div class="category-header">
+
+            <div>
+
+                <div class="category-name">
+                    水上运动
+                </div>
+
+                <div class="category-en">
+                    WATER SPORTS
+                </div>
+
+            </div>
+
+            <div class="category-number">
+                03
+            </div>
+
+        </div>
+
+
+        <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        类目
+                    </th>
+
+                    <th>
+                        重点上品路径
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>防晒服</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士运动服 ＞ 男士防晒服
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>套装 / 分体潜水服</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士运动服 ＞ 男士潜水防晒套装
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>潜水服 / 潜斯服</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 运动服装和器材 ＞ 水上运动 ＞ 游泳用品 ＞ 潜水 ＞ 潜水装备
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>冲浪服</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 运动服装和器材 ＞ 水上运动 ＞ 冲浪 ＞ 男士冲浪服
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>新奇泳装</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 新奇商品 ＞ 新奇服装和产品 ＞ 新奇服装 ＞ 男士新奇泳衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>泳衣</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 户外休闲 ＞ 水上运动 ＞ 游泳用品 ＞ 男士泳衣
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>泳裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士泳衣 ＞ 男士泳裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>三角泳裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士泳衣 ＞ 男士三角泳裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>平角泳裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士泳衣 ＞ 男士平角泳裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>沙滩裤</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士泳衣 ＞ 男士沙滩裤
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== 短裤 ==================== -->
+
+    <section class="category short">
+
+        <div class="category-header">
+
+            <div>
+
+                <div class="category-name">
+                    短裤
+                </div>
+
+                <div class="category-en">
+                    MEN'S SHORTS
+                </div>
+
+            </div>
+
+            <div class="category-number">
+                04
+            </div>
+
+        </div>
+
+
+        <div class="table-wrap">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        类目
+                    </th>
+
+                    <th>
+                        重点上品路径
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>休闲短裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士休闲运动服 ＞ 男士休闲运动短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>军 / 工装短裤</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士短裤 ＞ 男士工装短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2合1短裤</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 健身 ＞ 训练用品 ＞ 健身服 ＞ 男士 ＞ 男士运动短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>户外短裤</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 户外休闲 ＞ 徒步户外服装 ＞ 男士户外短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>跑步短裤</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 健身 ＞ 跑步 ＞ 男士跑步服 ＞ 男士跑步短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>高尔夫短裤</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 体育专项服装 ＞ 高尔夫 ＞ 男士高尔夫服 ＞ 短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>骑行裤</td>
+                    <td class="path">
+                        运动与户外用品 ＞ 体育专项服装 ＞ 骑行服 ＞ 男士骑行服 ＞ 男士骑行短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>篮球裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 男士时尚 ＞ 男装 ＞ 男士运动服 ＞ 男士篮球短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>新奇短裤</td>
+                    <td class="path">
+                        服装 ＞ 针织和珠宝饰品 ＞ 新奇商品 ＞ 新奇服装和产品 ＞ 新奇服装 ＞ 男士新奇短裤
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>其他</td>
+                    <td class="path">
+                        服装 ＞ 男士时尚 ＞ 男装 ＞ 男士短裤 ＞ 其他男士短裤
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        </div>
+
+    </section>
+
+
+    <a href="index.html" class="home-button">
+        ← 返回渡鲸澜首页
+    </a>
+
+
+</main>
+
+</body>
+</html>
